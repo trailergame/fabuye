@@ -120,7 +120,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
 /* 网址一 获取网址延迟 */
 const img = new Image();
-img.src = 'https://lspd.us.kg/jpg/favicon.ico';
+img.src = 'https://lspd.us.kg/jpg/favicon.ico?rand='+Math.random();
 img.onload = function () {
     var latency = Date.now() - startTime;
     $('#lineMs0').html(latency + 'ms');
@@ -132,7 +132,7 @@ img.onerror = function () {
 
 /* 网址二 获取网址延迟 */
 const img1 = new Image();
-img1.src = 'https://yyds.viphost.vip/jpg/favicon.ico';
+img1.src = 'https://yyds.viphost.vip/jpg/favicon.ico?rand='+Math.random();
 img1.onload = function () {
     var latency = Date.now() - startTime;
     $('#lineMs1').html(latency + 'ms');
@@ -155,7 +155,7 @@ $('#lineMs4').html(latency + 'ms');
 });*/
 /* 网址四 获取网址延迟 */
 const img2 = new Image();
-img2.src = 'https://www.games.ddns-ip.net/jpg/favicon.ico';
+img2.src = 'https://www.games.ddns-ip.net/jpg/favicon.ico?rand='+Math.random();
 img2.onload = function () {
     var latency = Date.now() - startTime;
     $('#lineMs2').html(latency + 'ms');
